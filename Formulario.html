@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            border: 5px solid #ccc;
+            padding: 20px;
+            max-width: 450px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: smaller;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"]{
+            width: 95%;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+       
+    </style> 
+</head>
+<body>
+    
+    <h1>Preencha o formulário abaixo</h1>
+    <div>
+        <form action="Formulario.html" method="post">
+            <label for="nome:">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="text" name="text" required>
+            <br>
+            <label for="data_nascimento">Data de Nascimento:</label>
+            <input type="date" name="data_nascimento" id="data_nascimento">
+            <br>
+            <label for="rg">RG:</label>
+            <input type="text">
+            <br>
+            <label for="cpf">CPF:</label>
+            <input type="text">
+        </form>                 
+    </div>
+    <div>
+        <h2>Dados de Endereço</h2>
+        <form action="Formulario.html" method="post">
+            <label for="Rua">Rua:</label>
+            <input type="text">
+
+            <label for="numero">Numero:</label>
+            <input type="number" name="numero" id="numero" required>
+            <br>
+            <label for="bairro">Bairro:</label>
+            <input type="text">
+            <br>
+            <label for="estado">Estado:</label>
+            <select name="estado" id="estado">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+            <br>
+            <label for="text">Cidade:</label>
+            <input type="text">
+            <br>
+            <label for="CEP">CEP</label>
+            <input type="number" name="CEP" id="CEP">
+    </div>
+    <div>
+        </form>
+        <h3>Dados de login</h3>
+        <form action="Formulario.html" method="post">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="imagem">Imagem de perfil:</label>
+            <input type="button" value="Escolher arquivo"> Nenhum arquivo selecionado
+            <br>
+            <label for="login">Login de usuário</label>
+            <input type="login" name="login" id="login">
+            <br>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha">
+            <br>
+            <label for="CpnfirmacaoSenha">Confirme a senha:</label>
+            <input type="password" name="senha" id="senha">
+        </form>
+    </div>   
+</body>
+</html>
